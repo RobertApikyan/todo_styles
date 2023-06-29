@@ -28,7 +28,7 @@ class TodoItem extends StatelessWidget {
             ),
             const Spacer(),
             Checkbox(
-                activeColor: AppColors.selectedCheckboxColor,
+                activeColor: AppColors.blue[90],
                 value: viewModel.model.isDone,
                 onChanged: onChanged)
           ]),

@@ -47,11 +47,11 @@ class TodoScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) => Scaffold(
-        backgroundColor: AppColors.backgroundColor,
+        backgroundColor: AppColors.neutral[0],
         appBar: AppBar(
-          title: const Text('TODO List',
-              style: TextStyle(fontSize: 18, color: AppColors.white)),
-          backgroundColor: AppColors.primaryColor,
+          title: Text('TODO List',
+              style: TextStyle(fontSize: 18, color: AppColors.black[0])),
+          backgroundColor: AppColors.blue[70],
         ),
         body: ref.watch(todoVmsProvider).when(
               data: (data) => _dataContent(context, ref, data),
@@ -59,7 +59,7 @@ class TodoScreen extends ConsumerWidget {
               loading: () => loadingBuilder(context),
             ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: AppColors.primaryColor,
+          backgroundColor: AppColors.blue[70],
           child: const Icon(Icons.add, color: Colors.white),
           onPressed: () => ref
               .read(TodoScreenController.provider)

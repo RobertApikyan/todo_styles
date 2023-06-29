@@ -55,10 +55,10 @@ class CreateTodo extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final controller = ref.watch(CreateTodoController.provider);
     return Scaffold(
-      backgroundColor: AppColors.backgroundColor,
+      backgroundColor: AppColors.neutral[0],
       appBar: AppBar(
           title: const Text('TODO Create'),
-          backgroundColor: AppColors.primaryColor),
+          backgroundColor: AppColors.blue[70]),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -83,7 +83,7 @@ class CreateTodo extends HookConsumerWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: AppColors.primaryColor,
+        backgroundColor: AppColors.blue[70],
         child: const Icon(Icons.done_rounded, color: Colors.white),
         onPressed: () => controller.onCreateTodoPressed(context),
       ),
