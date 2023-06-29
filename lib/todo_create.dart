@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:todo_styles/styles/app_color.dart';
 import 'package:todo_styles/todo_repo.dart';
 import 'package:todo_styles/todo_screen.dart';
 
@@ -55,10 +54,7 @@ class CreateTodo extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final controller = ref.watch(CreateTodoController.provider);
     return Scaffold(
-      backgroundColor: AppColors.neutral[0],
-      appBar: AppBar(
-          title: const Text('TODO Create'),
-          backgroundColor: AppColors.blue[70]),
+      appBar: AppBar(title: const Text('TODO Create')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -83,7 +79,6 @@ class CreateTodo extends HookConsumerWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: AppColors.blue[70],
         child: const Icon(Icons.done_rounded, color: Colors.white),
         onPressed: () => controller.onCreateTodoPressed(context),
       ),
