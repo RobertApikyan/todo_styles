@@ -29,7 +29,7 @@ class App extends ConsumerWidget {
               backgroundColor: AppColors.blue,
               titleTextStyle:
                   TextStyle(fontSize: 18, color: AppColors.black[0])),
-          scaffoldBackgroundColor: AppColors.neutral[0],
+          scaffoldBackgroundColor: AppColors.gray[0],
           checkboxTheme: CheckboxThemeData(
             checkColor: MaterialStateProperty.all(AppColors.black[0]),
             fillColor: MaterialStateProperty.all(AppColors.blue[80]),
