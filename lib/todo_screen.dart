@@ -47,7 +47,7 @@ class TodoScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) => Scaffold(
-        backgroundColor: AppColors.neutral[0],
+        backgroundColor: AppColors.gray[0],
         appBar: AppBar(
           title: Text('TODO List',
               style: TextStyle(fontSize: 18, color: AppColors.black[0])),

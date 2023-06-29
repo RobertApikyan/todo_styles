@@ -55,7 +55,7 @@ class CreateTodo extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final controller = ref.watch(CreateTodoController.provider);
     return Scaffold(
-      backgroundColor: AppColors.neutral[0],
+      backgroundColor: AppColors.gray[0],
       appBar: AppBar(
           title: const Text('TODO Create'),
           backgroundColor: AppColors.blue[70]),
