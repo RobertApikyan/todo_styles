@@ -51,7 +51,7 @@ class AppColors {
   });
   static const int _blackPrimary = 0xFF000000;
 
-  static const neutral = NonNullColorSwatch(_neutralPrimary, <int, Color>{
+  static const gray = NonNullColorSwatch(_neutralPrimary, <int, Color>{
     0: Color(0xFFF4F4F6),
     10: Color(0xFFEEEEF2),
     20: Color(0xFFDDDDE4),
