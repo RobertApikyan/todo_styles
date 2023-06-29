@@ -6,7 +6,7 @@ class AppThemes {
   static light() => ThemeData(
           primaryColor: AppColors.blue,
           appBarTheme: const AppBarTheme(backgroundColor: AppColors.blue),
-          scaffoldBackgroundColor: AppColors.neutral[0],
+          scaffoldBackgroundColor: AppColors.gray[0],
           checkboxTheme: CheckboxThemeData(
             checkColor: MaterialStateProperty.all(AppColors.black[0]),
             fillColor: MaterialStateProperty.all(AppColors.blue[80]),
