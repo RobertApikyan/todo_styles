@@ -49,6 +49,15 @@ class TodoScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) => Scaffold(
         appBar: AppBar(
           title: const Text('TODO List'),
+          actions: [
+            CupertinoSwitch(
+              activeColor: AppColors.blue[40],
+              trackColor: AppColors.black,
+              value: ref.watch(themeModeProvider) == ThemeMode.light,
+              onChanged: (value) => ref.read(themeModeProvider.notifier).state =
+              value ? ThemeMode.light : ThemeMode.dark,
+            )
+          ],
         ),
         body: ref.watch(todoVmsProvider).when(
               data: (data) => _dataContent(context, ref, data),
